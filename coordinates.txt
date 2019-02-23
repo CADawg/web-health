@@ -1,0 +1,14 @@
+NHS Ayrshire & Arran = 55.466888, -4.629981
+NHS Borders  55.583244, -2.795106
+NHS Dumfries & Galloway = 55.059346, -3.625432
+NHS Fife = 56.117755, -3.185310
+NHS Forth Valley = 56.079339, -3.904547
+NHS Grampian = 57.146492, -2.098255
+NHS Greater Glasgow and Clyde = 55.866305, -4.270132
+NHS Highland = 57.480787, -4.200735
+NHS Lanarkshire = 55.839784, -3.997161
+NHS Lothian = 55.919304, -3.253777
+NHS Orkney = 58.981869, -2.964337
+NHS Shetland Board = 60.154613, -1.153110
+NHS Tayside = 56.464656, -3.031128
+NHS Western Isles = 58.088539, -6.689270
