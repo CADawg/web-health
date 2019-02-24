@@ -9,7 +9,8 @@ function drawChartGenderPie() {
       ["Male", 376120],]);
 
   var options = {
-    title: 'Overall Inpatients by Gender'
+    title: 'Overall Inpatients by Gender',
+    colors: ['#6bcae2', '#51a5ba'],
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('gender-pie'));
@@ -32,7 +33,8 @@ function drawChartAgePie() {
 ]);
 
   var options = {
-    title: 'Overall Inpatients by Age'
+    title: 'Overall Inpatients by Age',
+    colors: ['#6bcae2', '#51a5ba', '#41924b', '#afeaaa', '#87e293'],
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('age-pie'));
@@ -49,6 +51,7 @@ function drawChartAge() {
   var options = {chart: {
       title: 'Psychiactric Inpatient Count',
       subtitle: 'By Age over time by financial year!',
+      colors: ['#6bcae2', '#51a5ba', '#41924b', '#afeaaa', '#87e293'],
   }};
 
   var chart = new google.charts.Bar(document.getElementById('age-chart'));
@@ -64,6 +67,7 @@ function drawChartGender() {
   var options = {chart: {
       title: 'Psychiactric Inpatient Count',
       subtitle: 'By Gender over time by financial year!',
+      colors: ['#6bcae2', '#51a5ba', '#41924b', '#afeaaa', '#87e293'],
   }};
 
   var chart = new google.charts.Bar(document.getElementById('gender-chart'));
@@ -79,9 +83,9 @@ function drawChart() {
   var options = {chart: {
       title: 'Psychiactric Inpatient Count',
       subtitle: 'Total over time by financial year!',
+      colors: ['#6bcae2', '#51a5ba', '#41924b', '#afeaaa', '#87e293'],
   }};
 
   var chart = new google.charts.Bar(document.getElementById('overview-chart'));
   chart.draw(data, google.charts.Bar.convertOptions(options));
 }
-
