@@ -38,7 +38,7 @@ $(document).ready(function () {
         console.log(mapGender);
         console.log(mapYear);
         console.log(mapAge);
-        const ratio = 13;
+        const ratio = 16;
         const circleColor = '#FF5666';
         
         $.getJSON("https://cors-anywhere.herokuapp.com/https://www.opendata.nhs.scot/api/3/action/datastore_search?resource_id=83b38aa6-73c0-4489-b344-11081e7aa0ed&q="+mapGender+"+"+mapYear+"+"+mapAge, function(result) {
