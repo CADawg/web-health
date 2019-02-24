@@ -39,6 +39,7 @@ $(document).ready(function () {
         console.log(mapYear);
         console.log(mapAge);
         const ratio = 13;
+        const circleColor = '#FF5666';
         
         $.getJSON("https://cors-anywhere.herokuapp.com/https://www.opendata.nhs.scot/api/3/action/datastore_search?resource_id=83b38aa6-73c0-4489-b344-11081e7aa0ed&q="+mapGender+"+"+mapYear+"+"+mapAge, function(result) {
         console.log(result)
@@ -46,126 +47,126 @@ $(document).ready(function () {
             switch(query.HBR2014) {
                 case ayrshire:
                 var circle = L.circle([ayrshireGeo[0], ayrshireGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap);
                 break;
                 case borders:
                 var circle = L.circle([bordersGeo[0], bordersGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap);                
                 break;
                 case dumfries:
                 var circle = L.circle([dumfriesGeo[0], dumfriesGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap); 
                 break;
                 case fife:
                 var circle = L.circle([fifeGeo[0], fifeGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap); 
                 break;
                 case forth:
                 var circle = L.circle([forthGeo[0], forthGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap);
                 break;
                 case grampian:
                 var circle = L.circle([grampianGeo[0], grampianGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap);
                 break;
                 case glasgow:
                 var circle = L.circle([glasgowGeo[0], glasgowGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap);
                 break;
                 case highland:
                 var circle = L.circle([highlandGeo[0], highlandGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap);
                 break;
                 case lanarkshire:
                 var circle = L.circle([lanarkshireGeo[0], lanarkshireGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap);
                 break;
                 case lothian:
                 var circle = L.circle([lothianGeo[0], lothianGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap);
                 break;
                 case orkney:
                 var circle = L.circle([orkneyGeo[0], orkneyGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap);
                 break;
                 case shetland:
                 var circle = L.circle([shetlandGeo[0], shetlandGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap);
                 break;
                 case tayside:
                 var circle = L.circle([taysideGeo[0], taysideGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap);
                 break;
                 case westisles:
                 var circle = L.circle([westislesGeo[0], westislesGeo[1]], query.PatientsCount * ratio, {
-                    color: 'red',
+                    color: circleColor,
                     opacity: 0,
-                    fillColor: 'red',
+                    fillColor: circleColor,
                     fillOpacity: 0.8
                 })
                 circle.addTo(mymap);
