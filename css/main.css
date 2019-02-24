@@ -23,3 +23,15 @@
     margin-top: 7px;
     padding: 0 5px;
 }
+
+.pie {
+    width: 49.5%; 
+    height: auto; 
+    display: inline-block;
+}
+
+.chart {
+    width: 49.5%; 
+    height: 400px; 
+    display: inline-block;
+}
