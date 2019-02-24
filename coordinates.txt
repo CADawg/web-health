@@ -12,3 +12,6 @@ NHS Orkney = 58.981869, -2.964337
 NHS Shetland Board = 60.154613, -1.153110
 NHS Tayside = 56.464656, -3.031128
 NHS Western Isles = 58.088539, -6.689270
+
+
+Centre: 57.287756, -4.352603
