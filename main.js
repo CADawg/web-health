@@ -28,18 +28,18 @@ $(document).ready(function () {
     const taysideGeo = "[56.464656, -3.031128]";
     const westisles = "S08000028";
     const westislesGeo = "[58.088539, -6.689270]";
-    
+
     function mapDisplay(){
         var mapGender = document.getElementById("sex").value;
         var mapYear = document.getElementById("year").value;
         var mapAge = document.getElementById("age").value;
         mapAge = mapAge.replace("65+", "65plus");
-        
+
         console.log(mapGender);
         console.log(mapYear);
         console.log(mapAge);
-        
-        $.getJSON("https://www.opendata.nhs.scot/api/3/action/datastore_search?resource_id=83b38aa6-73c0-4489-b344-11081e7aa0ed&q="+mapGender+"+"+mapYear+"+"+mapAge, function(result) {
+
+        $.getJSON("https://cors-anywhere.herokuapp.com/https://www.opendata.nhs.scot/api/3/action/datastore_search?resource_id=83b38aa6-73c0-4489-b344-11081e7aa0ed&q="+mapGender+"+"+mapYear+"+"+mapAge, function(result) {
         console.log(result)
         result.result.records.forEach(function(query) {
             switch(query.HBR2014) {
